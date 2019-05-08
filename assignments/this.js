@@ -24,12 +24,13 @@ helloWorld("d'sNutz");
 // code example for Implicit Binding
 const declareAlly = obj => {
     obj.pledge = function() {
-        console.log(`I ${this.name} Pledge Loyalty to House Stark`);
+        console.log(`I ${this.name} Pledge Loyalty to Your Moms House`);
         console.log(this)
     };
 };
 const houseDs = { name: 'Jared'};
-const houseNuts = { name: 'Joe'};
+const houseNuts = { name: 'Joe',
+things: "random"};
 declareAlly(houseDs);
 declareAlly(houseNuts);
 
